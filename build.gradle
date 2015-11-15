@@ -1,0 +1,20 @@
+group 'edu.sust.cse'
+version '0.0.1-Alpha'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'nu.pattern:opencv:2.4.9-7'
+    compile 'com.github.hoary.ffmpeg:FFmpeg-windows-x86:2.0.1.1'
+    compile 'com.github.hoary.ffmpeg:FFmpeg-linux-x86_64:2.0.1.1'
+    compile 'com.googlecode.javacpp:javacpp:0.7'
+    compile 'org.bytedeco:javacv:1.1'
+    compile files('libs/opencv-2.4.9-0.8-windows-x86_64.jar')
+    compile files('libs/opencv-2.4.9-0.8-windows-x86.jar')
+}
